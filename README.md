@@ -1,1 +1,1 @@
-# sonoff_cloud.py_change
+# HomeAssistant_sonoff_cloud.py_change
