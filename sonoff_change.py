@@ -39,35 +39,3 @@ c =('\"\"\"\nhttps://coolkit-technologies.github.io/eWeLink-API/#/en/PlatformOve
 f = open('/usr/share/hassio/homeassistant/custom_components/sonoff/core/ewelink/cloud.py','w')
 f.write(c)
 f.close
-
-'''
-webdriver_options = webdriver.ChromeOptions()
-#webdriver_options.add_argument('headless')
-#webdriver_options.add_argument('windows-size=1920x1080')
-#webdriver_options.add_argument('disable-gpu')
-driver = webdriver.Chrome()#("/usr/lib/chromium-browser/chromedriver", options =  webdriver_options )
-
-url = 'http://localhost.8123/config/system'
-driver.get(url)
-time.sleep(2)
-driver.find_element("xpath", '/html/body/div[1]/ha-authorize//ha-auth-flow//form/ha-formfield/ha-checkbox//div/input').click()
-time.sleep(1000)
-driver.find_element("xpath", '/html/body/div/ha-authorize//ha-auth-flow//form/ha-form//div/ha-form-string[1]//ha-textfield//label/input').send_keys('restart')
-time.sleep(1)
-driver.find_element("xpath", '/html/body/div[1]/ha-authorize//ha-auth-flow//form/ha-form//div/ha-form-string[2]//ha-textfield//label/input').send_keys('restart')
-time.sleep(1)
-driver.find_element("xpath", '//*[@id="button"]').click()
-time.sleep(1)
-driver.find_element("xpath", '//*[@id="button"]').click()
-time.sleep(1)
-#driver.find_element("xpath", '//*[@id="button"]').click()
-time.sleep(1)
-print(datetime.now())
-#브라우저 종료
-driver.quit()
-'''
-
-
-
-
-
